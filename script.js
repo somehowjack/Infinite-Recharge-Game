@@ -1,10 +1,4 @@
-var money = 0;
-var periodic = setInterval(updateMoney ,100);
+var area = document.getElementById("area").getContext("2d");
+var character = document.getElementById("character");
 
-function moneyButton() {
-  money += 1;
-}
-
-function updateMoney() {
-  var x = document.getElementById("money counter").innerHTML = "| you have " + money + " money |";
-  }
+area.drawImage(character , 10, 10, 100, 100)
